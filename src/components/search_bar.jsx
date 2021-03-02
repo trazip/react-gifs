@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
   handleChange = (event) => {
-    this.props.search(event.currentTarget.value);
+    const { search } = this.props;
+    search(event.currentTarget.value);
   }
 
   render() {
